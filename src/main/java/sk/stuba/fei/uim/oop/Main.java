@@ -17,7 +17,7 @@ public class Main {
 
         JLabel label = new JLabel("Hello world");
         panel.add(label);
-
+        panel.setBackground(Color.BLUE);
         var panel2 = new JPanel();
         panel2.setLayout(new BorderLayout());
 
