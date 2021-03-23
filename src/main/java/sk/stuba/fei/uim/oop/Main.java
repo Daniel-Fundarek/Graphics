@@ -18,9 +18,21 @@ public class Main {
         JLabel label = new JLabel("Hello world");
         panel.add(label);
 
-        for (int i = 0;i<10 ; i++){
-            panel.add(new JLabel("" + i));
+        var panel2 = new JPanel();
+        panel2.setLayout(new GridLayout(2,2));
+
+        for(int i = 0; i<5; i++){
+            panel2.add(new JLabel("a"+ i));
+
         }
 
+        for (int i = 0;i<12 ; i++){
+            if(i == 8){
+                panel.add(panel2);
+            }
+            else {
+                panel.add(new JLabel("" + i));
+            }
+        }
     }
 }
