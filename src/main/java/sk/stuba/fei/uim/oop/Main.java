@@ -7,9 +7,13 @@ public class Main {
         JFrame okno = new JFrame();
         okno.setVisible(true);
         okno.setSize(300, 300);
+        JPanel panel = new JPanel();
+        okno.add(panel);
         JLabel label = new JLabel("Hello world");
-        okno.add(label);
-
+        panel.add(label);
+        for (int i = 0;i<10 ; i++){
+            panel.add(new JLabel("" + i));
+        }
 
     }
 }
